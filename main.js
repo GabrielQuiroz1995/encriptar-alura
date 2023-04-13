@@ -63,7 +63,7 @@ function desencriptarTexto(textoEncriptado) {
     }
 
     buttonDesencriptar.onclick = () =>{
-        textoDes = contenido.innerHTML= desencriptarTexto(textoEncriptado);
+        textoDes = contenido.innerHTML= desencriptarTexto(texto.value);
         return textoDes
     }
 
