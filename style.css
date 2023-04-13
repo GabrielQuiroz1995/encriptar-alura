@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(243,245,252)
+}
+#general{
+    width: 100%;
+    display: flex;
+}
+#root{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 150px;
+}
+#logo{
+    margin: 20px 20px 20px 0px;
+}
+#encryp{
+    width: 50%;
+}
+#desencryp{
+    max-width: 100%;
+    position: relative;
+
+}
+#contentButtom{
+    position: absolute;;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
+    }
+#input{
+    width: 90%;
+    height: 600px;
+    margin: 0 0 0 20px;
+    background-color: rgb(243,245,252);
+    border: solid 0px;
+}
+#input:focus{
+    outline: none;
+}
+#content{
+    width: 90%;
+    height: 800px;
+    margin: 0 0 0 0px;
+    box-shadow: 1px 1px 10px black;
+}
+#button{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+}
+textarea{
+    font-size: 30px; 
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Estlo compartido por los botones */
+#encriptar,#desencriptar,#copiar{
+    margin:20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#encriptar{
+    background-color: rgb(10,56,113);
+    color: rgb(216,223,232);
+}
+#desencriptar{
+    background-color: rgb(216,223,232);
+    color:rgb(10,56,113);
+}
+
+@media (max-width: 890px) {
+    #general{
+        flex-direction: column;
+    }
+     #root{
+        width: 100%;
+    }
+    #encryp{
+        width: 100%;
+    }
+    #input{
+        width: 100%;
+    }
+    #input{
+        height: 200px;
+    }
+    #content{
+        height: 200px;
+    }
+    #button{
+        margin: 0 10px ;
+    }
+    #encriptar, #desencriptar, #copiar {
+        margin: 10px;
+    }
+    #content {
+        width: 100%;
+    }
+}
